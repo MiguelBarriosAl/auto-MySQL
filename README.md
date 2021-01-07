@@ -6,14 +6,16 @@ Crontab is a text file that saves a list of commands to be executed in a time sp
 
 The first part of the script is save the db credentials:
 script.sh
-``
+
+```
 #!/usr/bin/
   user=""
   password=""
   host=""
   db_name=""
   table_name=""
-``
+```
+
 Next to define the current date:
 ``
   *date=$(date +"%d-%b-%Y")
