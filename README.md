@@ -37,14 +37,3 @@ Shell Crontab:
 ```
   30 3 * * * sh path/file/script.sh
 ```
-https://crontab.guru/
-
-
-  
-
-  
- 
-  
-  
-
-
