@@ -1,0 +1,15 @@
+#!/usr/bin/
+
+# Database credentials
+user=""
+password=""
+host=""
+db_name=""
+table_name=""
+
+date=$(date +"%d-%b-%Y")
+
+mysql --user=$user --password=$password --host=$host $db_name -e "SELECT link INTO OUTFILE '/var/lib/mysql-files/total-$date.txt' FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' FROM garbage;"
+chmod -R o+rwx /var/lib/mysql-files/total-*
+cp /var/lib/mysql-files/total* /home/ubuntu/tor/directories/data/backup
+#mysql --user=$user --password=$password --host=$host $db_name -e "TRUNCATE tor.garbage'"
