@@ -1,5 +1,4 @@
-# automateMySQL
-Automate MySQL with a script and Crontab
+# Automate MySQL with a script and Crontab
 
 The aim of this script is to automate the download of a specific field from a mysql database in a very simple way and with the help of crontab in linux
 Crontab is a text file that saves a list of commands to be executed in a time specified by the user.
